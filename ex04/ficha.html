@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Ficha Cadastral</title>
+	<style type="text/css">
+		*{
+			font:15px Arial, Verdana, Helvetica, Sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			font-size: 30px;
+			font-weight: bold;
+		}
+		div{
+			margin: 7px;
+		}
+		.cabecalho{
+			text-align: center;
+			color: darkgrey;
+		}
+		.fieldset{
+			height: 100px;
+			width: 200px;
+		}
+		.rg{
+			float: left;
+		}
+		.cpf{
+			float: right;
+		}
+		.endereco{
+			float: left;
+		}
+		.genero{
+			float: left;
+		}
+		.data{
+			float: right;
+		}
+
+		select{
+			width: 355px;
+		}
+		button{
+			margin: 5px;
+		}
+		.botao{
+			text-align: center;
+			clear: both;
+		}
+		input{
+			background-color: #ddd;
+			border: 1px solid #333;
+		}
+		select{
+			background-color: #ddd;
+			border:  #333;
+			border-radius: 5px;
+		}
+		.corpo{
+			margin: 300px;
+		}
+		.civil{
+			text-align: left;
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<div class="corpo">
+		<h1 class="cabecalho">Ficha Cadastral</h1>
+		<div class="fieldset">
+			<fieldset>
+				<legend>Dados Pessoais:</legend>
+
+				<div class="nome">
+					<label>Nome:<br/>
+						<input type="text" name="nome" size = "100" 
+						required />
+					</label>
+				</div>
+
+				<div class="rg">
+					<label>RG:<br/>
+						<input type="text" name="rg" size="46" 
+						required />
+					</label>
+				</div>
+
+				<div class="cpf">
+					<label>CPF:<br/>
+						<input type="text" name="cpf" size="47"
+						required= />
+					</label>
+				</div>
+
+				<div class="endereco">
+					<label>Endereço:<br/>
+						<input type="text" name="cpf" size="100" 
+						required= />
+					</label>
+				</div>
+
+				<div class="genero">Gênero:<br/>
+					<select name="genero">
+						<option value="masculino">Feminino</option>
+						<option value="masculino">Masculino</option>
+					</select>
+				</div>
+
+
+				<div class="data">
+					<label>Data nascimento:<br/>
+						<input type="text" name="nascimento" size="47" 
+					    required />
+					</label>
+				</div>
+
+				<div class="civil">
+					<label>
+						Situação Civil:<br/>
+						Solteira(o)
+						<input type="radio" name="civil" checked="checked" />
+						Casada(o)
+						<input type="radio" name="civil" />
+						Viúva(o)
+						<input type="radio" name="civil" />
+					</label>
+				</div>
+
+				<div class="botao">
+					<button>Cadastrar</button>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+</body>
+</html>
